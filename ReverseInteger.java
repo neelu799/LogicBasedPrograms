@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class SumOfNumbers
+class ReverseInteger
 {
 	public static void main(String[]args)
 	{
@@ -9,8 +9,7 @@ class SumOfNumbers
 		while(num!=0)
 		{
 			int k=num%10;
-			if(k%3==0)
-				sum=sum+k;
+			sum=sum*10+k;
 			num=num/10;
 		}
 		System.out.println(sum);

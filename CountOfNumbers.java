@@ -1,18 +1,17 @@
 import java.util.Scanner;
-class SumOfNumbers
+class CountOfNumbers
 {
 	public static void main(String[]args)
 	{
 		Scanner sc=new Scanner(System.in);
 		int num=sc.nextInt();
-		int sum=0;
+		int count=0;
 		while(num!=0)
 		{
 			int k=num%10;
-			if(k%3==0)
-				sum=sum+k;
+			count++;
 			num=num/10;
 		}
-		System.out.println(sum);
+		System.out.println(count);
 	}
 }

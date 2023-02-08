@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class SumOfNumbers
+class PrimeNumbersSum
 {
 	public static void main(String[]args)
 	{
@@ -9,7 +9,13 @@ class SumOfNumbers
 		while(num!=0)
 		{
 			int k=num%10;
-			if(k%3==0)
+			int count=0;
+			for(int i=1;i<k;i++)
+			{
+				if(k%i==0)
+					count++;
+			}
+			if(count==1)
 				sum=sum+k;
 			num=num/10;
 		}
